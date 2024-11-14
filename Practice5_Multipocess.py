@@ -28,7 +28,7 @@ print(time_stop - time_start)
 # Многопроцессный подход
 if __name__ == '__main__':
     time_start = time.time()
-    with multiprocessing.Pool() as pool:
+    with multiprocessing.Pool(len(file_list)) as pool:
         pool.map(read_info, file_list)
 
     time_stop = time.time()
