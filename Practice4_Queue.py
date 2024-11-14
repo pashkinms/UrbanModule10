@@ -66,6 +66,7 @@ guests_names = [
 'Maria', 'Oleg', 'Vakhtang', 'Sergey', 'Darya', 'Arman',
 'Vitoria', 'Nikita', 'Galina', 'Pavel', 'Ilya', 'Alexandra'
 ]
+
 # Создание гостей
 guests = [Guest(name) for name in guests_names]
 # Заполнение кафе столами
